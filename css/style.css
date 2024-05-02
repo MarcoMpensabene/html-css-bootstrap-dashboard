@@ -1,0 +1,36 @@
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+.my_aside-bar{
+    width: 80px;
+    background-color: red;
+    height: calc(100vh - 56px);
+}
+
+.my_main-container{
+    background-color: blueviolet;
+}
+
+.my_content{
+    width: calc(100vw - 80px);
+    height: calc(100vh - 56px);
+    overflow-y: auto;
+}
+
+ul{
+    list-style: none;
+}
+.my_bg-blue{
+    background-color: aqua;
+}
+
+@media  screen and (min-width: 1199.98px) {
+    .my_aside-bar{
+        width: 200px;
+
+    }
+    .my_content{
+        width: calc(100vw - 200px);
+    }
+}

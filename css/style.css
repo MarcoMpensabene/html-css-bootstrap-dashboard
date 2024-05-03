@@ -4,7 +4,7 @@ body{
 
 .my_aside-bar{
     width: 80px;
-    background-color: red;
+    background-color: #051e34;
     height: calc(100vh - 56px);
 }
 
@@ -22,7 +22,7 @@ ul{
     list-style: none;
 }
 .my_bg-blue{
-    background-color: aqua;
+    background-color: lightblue;
 }
 
 @media  screen and (min-width: 1199.98px) {
@@ -33,4 +33,7 @@ ul{
     .my_content{
         width: calc(100vw - 200px);
     }
+}
+span{
+    display: inline-block;
 }

@@ -14,6 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
+    <!-- FONTAWESOME--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 
     <title>BootStrapDashboard</title>
@@ -23,12 +25,20 @@
     <header>
     <!-- BARRA NAV HEADER-->
         <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand">Navbar</a>
-            <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <ul class="container-fluid pt-2">
+                <img src="./img/logo.svg" alt="boolean logo" class="d-none d-xl-block pe-3">
+                <!--<img src="./img/mobile-logo.png" alt="mobile logo" class="d-xl-none d-xxl-none "> -->
+                
+                <form class="d-flex col" role="search">
+                    <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
+                </form>
+
+                <ul class="d-flex ps-3">
+                    <li><i class="fa-solid fa-bars me-4"></i></li>
+                    <li><i class="fa-solid fa-circle-question me-4"></i></li>
+                    <li><i class="fa-solid fa-ellipsis-vertical me-4"></i></li>
+                    <li><i class="fa-solid fa-bell me-4"></i></li>
+                </ul>
             </div>
         </nav>
     </header>
@@ -37,21 +47,33 @@
         
         <div class="my_main-container overflow-y-auto d-flex">
             <!-- BARRA LATERALE-->
-            <aside class="my_aside-bar d-flex flex-column justify-content-between">
-                <ul class="d-flex flex-column">
-                    <li>Home</li>
-                    <li>stats</li>
-                    <li>signals</li>
+            <aside class="my_aside-bar d-flex flex-column justify-content-between text-light ">
+                <ul class="d-flex flex-column py-3 ">
+                    <li class="d-flex mb-3 ">
+                        <i class="fa-solid fa-house me-2 "></i>
+                        <span class="d-none d-xl-block">Home</span>
+                    </li>
+                    <li class="d-flex mb-3">
+                        <i class="fa-solid fa-chart-simple me-2"></i>
+                        <span class="d-none d-xl-block">Stats</span>
+                    </li>
+                    <li class="d-flex mb-3">
+                        <i class="fa-solid fa-signal me-2"></i>
+                        <span class="d-none d-xl-block ">Signals</span>
+                    </li>
                 </ul>
                 <ul>
-                    <li>Admin</li>
+                    <li class="d-flex">
+                        <i class="fa-solid fa-gear me-2"></i>
+                        <span class="d-none d-xl-block ">Admin</span>
+                    </li>
                 </ul>
             </aside>
         <!-- BARRA INFO MAIN   -->
             <div class="my_content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="column-12">
+                        <div class="col-12 p-0">
                             <section class="d-flex justify-content-between py-3 my_bg-blue">
                                 <div>
                                     BOOLEAN

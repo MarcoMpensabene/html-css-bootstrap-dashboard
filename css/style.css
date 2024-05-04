@@ -5,16 +5,16 @@ body{
 .my_aside-bar{
     width: 80px;
     background-color: #051e34;
-    height: calc(100vh - 56px);
+    height: calc(100vh - 78px);
 }
 
 .my_main-container{
-    background-color: blueviolet;
+    background-color: #f8f9fa;
 }
 
 .my_content{
     width: calc(100vw - 80px);
-    height: calc(100vh - 56px);
+    height: calc(100vh - 78px);
     overflow-y: auto;
 }
 
@@ -22,7 +22,8 @@ ul{
     list-style: none;
 }
 .my_bg-blue{
-    background-color: lightblue;
+    background-color: #1b72e8;
+    color: white;
 }
 
 @media  screen and (min-width: 1199.98px) {
@@ -37,3 +38,4 @@ ul{
 span{
     display: inline-block;
 }
+

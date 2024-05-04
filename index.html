@@ -37,7 +37,18 @@
                     <li><i class="fa-solid fa-bars me-4"></i></li>
                     <li><i class="fa-solid fa-circle-question me-4"></i></li>
                     <li><i class="fa-solid fa-ellipsis-vertical me-4"></i></li>
-                    <li><i class="fa-solid fa-bell me-4"></i></li>
+                    <li>
+                        <div class="dropdown">
+                            <a  data-bs-toggle="dropdown">
+                                <i class="fa-solid fa-bell text-warning"></i>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-lg-end">
+                                <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                <li><a class="dropdown-item" href="#">Logout</a></li>
+                            </ul>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -73,86 +84,190 @@
             <div class="my_content">
                 <div class="container-fluid">
                     <div class="row">
-                        <div class="col-12 p-0">
-                            <section class="d-flex justify-content-between py-3 my_bg-blue">
-                                <div>
-                                    BOOLEAN
+                        <div class="col-12 p-0 mb-2">
+                            <section class="d-flex justify-content-between py-3 my_bg-blue row">
+                                <div class="col-12 col-lg-4">
+                                    <p>BOOLEAN <span class="badge text-bg-secondary">piano blaze</span></p>
+                                    <span class="badge text-bg-secondary">3app</span>
                                 </div>
-                                <div>
-                                    STUDENTI
+                                <div class="col-12 col-lg-4">
+                                    <p>Studenti online negli ultimi 30 minuti</p>
+                                    <p>125</p>
                                 </div>
-                                <div>
-                                    NUOVI STUDENTI
+                                <div class="col-12 col-lg-4 d-flex">
+                                    <p>nuovo studente</p>
+                                    <div id="add">
+                                        <i class="fa-regular fa-square-plus fs-1 fw-2" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample" ></i>
+                                        <div class="offcanvas offcanvas-end w-50 show" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                                            <div class="offcanvas-header">
+                                                <h5 class="offcanvas-title" id="offcanvasExampleLabel">Inserisci un nuovo studente</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                            </div>
+                                            <div class="offcanvas-body">
+                                                <form class="row g-3">
+                                                    <div class="col-md-6">
+                                                        <label for="inputEmail4" class="form-label">Email</label>
+                                                        <input type="email" class="form-control" id="inputEmail4">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputPassword4" class="form-label">Password</label>
+                                                        <input type="password" class="form-control" id="inputPassword4">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="inputAddress" class="form-label">Address</label>
+                                                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <label for="inputAddress2" class="form-label">Address 2</label>
+                                                        <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <label for="inputCity" class="form-label">City</label>
+                                                        <input type="text" class="form-control" id="inputCity">
+                                                    </div>
+                                                    <div class="col-md-4">
+                                                        <label for="inputState" class="form-label">State</label>
+                                                        <select id="inputState" class="form-select">
+                                                            <option selected>Choose...</option>
+                                                            <option>...</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="col-md-2">
+                                                        <label for="inputZip" class="form-label">Zip</label>
+                                                        <input type="text" class="form-control" id="inputZip">
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                            <label class="form-check-label" for="gridCheck">
+                                                                Check me out
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <button type="submit" class="btn btn-primary">Sign in</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </section>
-                        </div> 
+                            </section> 
+                        </div>
                     </div>
                             
                     <div class="row">
                             <!-- PROSSIME CLASSI-->
                             <div class="col-12 col-lg-8">
-                                <section class=" p-2">
+                                <section class=" p-2 mb-2">
                                     <div class="card">
-                                        <div class="card-header">
-                                            Featured
+                                        <div class="card-header fs-2">
+                                            Prossime classi
                                         </div>
-                                        <table class="table">
+                                        <table class="table ">
                                             <thead>
                                                 <tr>
-                                                    <th scope="col">#</th>
-                                                    <th scope="col">First</th>
-                                                    <th scope="col">Last</th>
-                                                    <th scope="col">Handle</th>
-                                                    <th scope="col">Action</th>
-    
+                                                    <td scope="col" colspan="3">Nomi</td>
+                                                    <td scope="col">Data inizio</td>
+                                                    <td scope="col">ROI</td>
+                                                    <td scope="col">Stato</td>
+                                                    <td scope="col">Azioni</td>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody >
                                                 <tr>
-                                                    <th scope="row">1</th>
-                                                    <td>Mark</td>
-                                                    <td>Otto</td>
-                                                    <td>@mdo</td>
-                                                    <td>@mdo</td>
+                                                    <td scope="row" colspan="3"><img src="./img/class-avatar.jpg" alt="" height='23' width='23' class="me-2">Classe 75</td>
+                                                    <td>15 Febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>Done</td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil  me-2"></i>
+                                                        <i class="fa-sharp fa-solid fa-trash"></i>
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">2</th>
-                                                    <td>Jacob</td>
-                                                    <td>Thornton</td>
-                                                    <td>@fat</td>
-                                                    <td>@mdo</td>
+                                                    <td scope="row" colspan="3"><img src="./img/class-avatar.jpg" alt="" height='23' width='23' class="me-2">Classe 76</td>
+                                                    <td>16 Febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>Done</td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil  me-2"></i>
+                                                        <i class="fa-sharp fa-solid fa-trash"></i>
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">3</th>
-                                                    <td colspan="2">Larry the Bird</td>
-                                                    <td>@twitter</td>
-                                                    <td>@mdo</td>
+                                                    <td scope="row" colspan="3"><img src="./img/class-avatar.jpg" alt=""  height='23' width='23' class="me-2">Classe 77</td>
+                                                    <td>17 Febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>process</td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil  me-2"></i>
+                                                        <i class="fa-sharp fa-solid fa-trash"></i>
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">4</th>
-                                                    <td colspan="2">Larry the Bird</td>
-                                                    <td>@twitter</td>
-                                                    <td>@mdo</td>
+                                                    <td scope="row" colspan="3"><img src="./img/class-avatar.jpg" alt=""  height='23' width='23' class="me-2">Classe 78</td>
+                                                    <td >18 Febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>Done</td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil  me-2"></i>
+                                                        <i class="fa-sharp fa-solid fa-trash"></i>
+                                                    </td>
                                                 </tr>
                                                 <tr>
-                                                    <th scope="row">5</th>
-                                                    <td colspan="2">Larry the Bird</td>
-                                                    <td>@twitter</td>
-                                                    <td>@mdo</td>
+                                                    <td scope="row" colspan="3"><img src="./img/class-avatar.jpg" alt=""  height='23' width='23' class="me-2">Classe 79</td>
+                                                    <td >19 Febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>failed</td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil  me-2"></i>
+                                                        <i class="fa-sharp fa-solid fa-trash"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row " colspan="3"><img src="./img/class-avatar.jpg" alt=""  height='23' width='23' class="me-2">Classe 80</td>
+                                                    <td >20 Febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>Done</td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil  me-2"></i>
+                                                        <i class="fa-sharp fa-solid fa-trash"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row" colspan="3"><img src="./img/class-avatar.jpg" alt=""  height='23' width='23' class="me-2">Classe 81</td>
+                                                    <td >21 Febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>failed</td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil  me-2"></i>
+                                                        <i class="fa-sharp fa-solid fa-trash"></i>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td scope="row" colspan="3"><img src="./img/class-avatar.jpg" alt=""  height='23' width='23' class="me-2">Classe 82</td>
+                                                    <td >22 Febbraio 2021</td>
+                                                    <td>20%</td>
+                                                    <td>Done</td>
+                                                    <td>
+                                                        <i class="fa-solid fa-pencil me-2"></i>
+                                                        <i class="fa-sharp fa-solid fa-trash"></i>
+                                                    </td>
                                                 </tr>
                                             </tbody>
                                         </table>
                                 </section>
-                                <section class="">
-                                    <div class="card">
-                                        <div class="card-header">
-                                            Featured
+                                <section class="p-2 mb-2 ">
+                                    <div class="card ">
+                                        <div class="card-header fs-2">
+                                            F.A.Q.
                                         </div>
                                         <div class="accordion accordion-flush" id="accordionFlushExample">
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                    Accordion Item #1
+                                                    Come aggiungere un nuovo studente?
                                                 </button>
                                                 </h2>
                                                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -162,7 +277,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                    Accordion Item #2
+                                                    Come posso accedere alle informazioni del mio account?
                                                 </button>
                                                 </h2>
                                                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -172,7 +287,7 @@
                                             <div class="accordion-item">
                                                 <h2 class="accordion-header">
                                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                                    Accordion Item #3
+                                                    Posso usare questa dashboard da mobile?
                                                 </button>
                                                 </h2>
                                                 <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
@@ -183,27 +298,25 @@
                                     </div>   
                                 </section>
                             </div>
-                            
-                                <!--FAQ-->
                             <div class="col-lg-4">
                                     <!--TO DO -->
-                                <section class=" p-2">
+                                <section class=" p-2 mb-2">
                                         <div class="card">
-                                            <div class="card-header">
-                                                Featured
+                                            <div class="card-header fs-2">
+                                                Todo
                                             </div>
                                             <ul class="list-group">
                                                 <li class="list-group-item">
                                                     <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckbox">
-                                                    <label class="form-check-label" for="firstCheckbox">First checkbox</label>
+                                                    <label class="form-check-label" for="firstCheckbox">Kickoff nuove classi</label>
                                                 </li>
                                                 <li class="list-group-item">
                                                     <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckbox">
-                                                    <label class="form-check-label" for="secondCheckbox">Second checkbox</label>
+                                                    <label class="form-check-label" for="secondCheckbox">Lezione su Bootstrap in classe #75</label>
                                                 </li>
                                                 <li class="list-group-item">
                                                     <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckbox">
-                                                    <label class="form-check-label" for="thirdCheckbox">Third checkbox</label>
+                                                    <label class="form-check-label" for="thirdCheckbox">Controllare username github studenti</label>
                                                 </li>
                                             </ul> 
                                         </div>    
@@ -212,21 +325,20 @@
                                 
                                 <!-- UTENTI ATTIVI-->
                                 
-                                <section class=" p-3">
+                                <section class=" p-2 mb-2">
                                     <div class="card">
                                         <img src="./img/stats.jpeg" class="card-img-top" alt="stast">
                                         <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                            <h5 class="card-title">Utenti attivi</h5>
+                                            <p class="card-text">Lista degli utenti attivi in piattaforma nell'ultimo mese</p>
                                         </div>
                                         <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">An item</li>
-                                            <li class="list-group-item">A second item</li>
-                                            <li class="list-group-item">A third item</li>
+                                            <li class="list-group-item">Gennaio : 1200</li>
+                                            <li class="list-group-item">Febbraio : 800</li>
+                                            <li class="list-group-item">Marzo : 1500</li>
                                         </ul>
                                         <div class="card-body">
-                                            <a href="#" class="card-link">Card link</a>
-                                            <a href="#" class="card-link">Another link</a>
+                                            <a href="#" class="card-link">Visualizza report approfondito</a>
                                         </div>
                                     </div>
     

@@ -29,7 +29,6 @@ ul{
 @media  screen and (min-width: 1199.98px) {
     .my_aside-bar{
         width: 200px;
-
     }
     .my_content{
         width: calc(100vw - 200px);
@@ -39,3 +38,7 @@ span{
     display: inline-block;
 }
 
+.my_badge_color{
+    color: white;
+    background-color: #165bba;
+}

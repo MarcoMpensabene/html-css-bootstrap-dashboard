@@ -29,18 +29,6 @@ ul{
 #offcanvasExample{
     width: 100%;
 }
-
-@media  screen and (min-width: 991.98px) {
-    .my_aside-bar{
-        width: 200px;
-    }
-    .my_content{
-        width: calc(100vw - 200px);
-    }
-    #offcanvasExample{
-        width: 45%;
-    }
-}
 span{
     display: inline-block;
 }
@@ -52,4 +40,21 @@ span{
 
 #my_mobile_img{
     width: 55px;
+}
+
+.my_col_table{
+    width: 13%;
+}
+
+
+@media  screen and (min-width: 991.98px) {
+    .my_aside-bar{
+        width: 200px;
+    }
+    .my_content{
+        width: calc(100vw - 200px);
+    }
+    #offcanvasExample{
+        width: 45%;
+    }
 }
